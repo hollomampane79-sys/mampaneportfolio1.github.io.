@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kabza Mampane | AI Automation & Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<meta name="description" content="Portfolio and CV of Hollo Kabelo Mampane (Kabza): AI automation and web developer based in Johannesburg, South Africa.">
+<style>
+:root{--bg:#0b0f0c;--surface:#121814;--text:#e8efe7;--muted:#9ba79c;--line:rgba(232,239,231,.12);--brand:#b8ff3c;--brand2:#ffb347;--chip:#17201a;--chipt:#b8ff3c;--btnt:#08110a;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#faf6ef;--surface:#fff;--text:#1f1a16;--muted:#6b625a;--line:#e6dfd3;--brand:#c2410c;--brand2:#e2571e;--chip:#fdebdc;--chipt:#c2410c;--btnt:#fff;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;letter-spacing:-.02em;color:var(--text)}
+.links{display:flex;gap:18px;align-items:center;overflow-x:auto}
+.links a{color:var(--muted);font-size:.92rem;white-space:nowrap}.links a:hover{color:var(--brand)}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;border:1px solid var(--brand);background:var(--brand);color:var(--btnt);cursor:pointer;font-size:.95rem;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--brand)}
+.hero{padding:72px 0 56px}
+.eyebrow{color:var(--brand);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin:10px 0 16px;letter-spacing:-.03em}
+h1 span{background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--muted);max-width:640px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+section{padding:52px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:0 0 26px}
+.chip{display:inline-block;background:var(--chip);color:var(--chipt);padding:4px 11px;border-radius:99px;font-size:.82rem;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{margin:0 0 4px;font-size:1.1rem}.card p{margin:8px 0 12px;color:var(--muted);font-size:.96rem}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.meta{font-size:.82rem;color:var(--muted);font-weight:600}
+.skills .card h3{margin-bottom:12px}
+.tl{border-left:2px solid var(--line);padding-left:20px;margin-left:6px}
+.tl .item{position:relative;margin-bottom:24px}
+.tl .item::before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--brand)}
+.tl h3{margin:0;font-size:1.05rem}.tl p{margin:4px 0 0;color:var(--muted)}
+form{display:grid;gap:14px;max-width:560px}
+label{font-size:.88rem;font-weight:600}
+input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;margin-top:5px}
+input:focus,textarea:focus{outline:2px solid var(--brand);outline-offset:1px}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.85rem}
+h1,h2,h3,.logo{font-family:"Space Grotesk",Inter,system-ui,sans-serif}
+.eyebrow,.chip,.meta{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+.chip{font-size:.76rem;border:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.14em}
+.card{transition:transform .15s ease,border-color .15s ease}.card:hover{transform:translateY(-3px);border-color:var(--brand)}
+.btn{border-radius:999px;font-family:"Space Grotesk",Inter,sans-serif}
+.btn:hover{box-shadow:0 10px 30px rgba(184,255,60,.18)}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(700px 400px at 80% -10%,rgba(184,255,60,.10),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(255,179,71,.08),transparent 60%);pointer-events:none;z-index:-1}
+:root[data-theme="light"] body::before{display:none}
+@media print{body::before{display:none}:root,:root[data-theme]{--bg:#fff;--brand:#0b6b1f;--chip:#eee;--chipt:#000}}
+.vid{aspect-ratio:16/9;width:100%;border:0;border-radius:10px;background:var(--line)}
+@media print{#videos{display:none}}
+@media print{header,.cta,#contact,.theme,footer .no-print{display:none!important}body{background:#fff;color:#000;font-size:11pt}section{padding:14px 0;break-inside:avoid}.card{border:1px solid #ccc}.hero{padding:10px 0}:root{--surface:#fff;--text:#000;--muted:#333;--line:#ccc}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top">Kabza.</a>
+<div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#videos">Videos</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+<button class="theme" id="theme" type="button" aria-label="Toggle theme">Theme</button></div>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div class="eyebrow">AI Automation &amp; Web Developer · Johannesburg, SA</div>
+<h1>I build AI-powered systems <span>that remove repetitive work.</span></h1>
+<p class="lead">From lead-qualification chatbots to n8n automations and full-stack web apps, I help teams save time and operate more reliably. I’m Kabza, a final-year Computer and Data Science student and freelance developer in Johannesburg. A proud “lazy hard worker”: I work hard so the manual work doesn’t have to be done twice.</p>
+<div class="cta"><a class="btn" href="#contact">Get in touch</a><a class="btn ghost" href="#projects">View projects</a><button class="btn ghost" type="button" onclick="window.print()">Download CV (PDF)</button></div>
+<div class="facts"><span class="chip">Open to remote roles (SAST)</span><span class="chip">Available for: AI automation · Chatbots · Full-stack apps · API integrations</span><span class="chip">Graduating 2026</span><span class="chip">n8n · Node.js · React · Python</span></div>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About</h2><p class="sub">Who I am and what I’m looking for.</p>
+<div class="card"><p style="margin:0;color:var(--text)">I’m completing my Bachelor of Computer and Data Science at Emeris University (Sandton campus) while working as a freelance AI automation and web developer. My work sits where workflows, APIs and AI meet: connecting systems with webhooks, qualifying leads with chatbots, and shipping secure back ends. I’m targeting remote AI automation, junior AI engineering, AI solution architecture and low-code/no-code developer roles, and I prefer to be judged on what I’ve actually built.</p></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2><p class="sub">A selection of production and academic work.</p>
+<div class="grid" id="projectGrid"></div>
+</div></section>
+
+<section id="videos"><div class="wrap">
+<h2>Project Demo Videos</h2><p class="sub">Walkthroughs of my work.</p>
+<div class="grid" id="videoGrid"></div>
+</div></section>
+
+<section id="testimonials" hidden><div class="wrap">
+<h2>Client Feedback</h2><p class="sub">What people say about working with me.</p>
+<div class="grid" id="testiGrid"></div>
+</div></section>
+
+<section id="skills" class="skills"><div class="wrap">
+<h2>Skills</h2><p class="sub">What I use day to day, and what I’m growing into.</p>
+<div class="grid" id="skillGrid"></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2>How I Work</h2><p class="sub">From messy workflow to a system you can rely on.</p>
+<div class="grid">
+<div class="card"><h3>1. Discover</h3><p>Identify repetitive workflows and bottlenecks.</p></div>
+<div class="card"><h3>2. Design</h3><p>Map systems, APIs, data flow and automation logic.</p></div>
+<div class="card"><h3>3. Build</h3><p>n8n workflows, back end, front end and AI components.</p></div>
+<div class="card"><h3>4. Test &amp; deploy</h3><p>Error handling, monitoring and security.</p></div>
+<div class="card"><h3>5. Hand over</h3><p>Documentation and client training.</p></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience &amp; Education</h2><p class="sub">Where I’ve worked and studied.</p>
+<div class="tl" id="timeline"></div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+<h2>Certifications</h2><p class="sub">Credentials and programmes.</p>
+<div class="grid" id="certGrid"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let’s work together</h2><p class="sub">Hiring, or have a project in mind? Send me a message and I’ll reply promptly.</p>
+<form id="form">
+<div><label>Name<input name="name" required autocomplete="name"></label></div>
+<div><label>Email<input name="email" type="email" required autocomplete="email"></label></div>
+<div><label>Message<textarea name="message" rows="5" required></textarea></label></div>
+<button class="btn" type="submit">Send message</button>
+<small id="status" style="color:var(--muted)"></small>
+</form>
+<div id="alt" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Hollo Kabelo Mampane · <a href="#" id="gh">GitHub</a> · <a href="#" id="li">LinkedIn</a> · <a href="#" id="em">Email</a></div></footer>
+
+<script>
+/* ===== EDIT YOUR DETAILS HERE ===== */
+const CONFIG = {
+  email: "hollomampane79@gmail.com",          // <- replace with your real email
+  github: "https://github.com/hollomampane79-sys",
+  portfolioGithub: "https://github.com/mampaneportfolio1",
+  linkedin: "https://www.linkedin.com/in/hollomampane23/", // <- replace
+  booking: "",  // optional: Calendly or Google Calendar link for a free 15-min intro call
+  formspree: ""  // optional: paste your Formspree endpoint (https://formspree.io/f/xxxx) for in-page sending
+};
+const projects = [
+  {t:"WhatsApp Lead Qualification Chatbot",m:"Freelance · Real estate client",d:"A WhatsApp Business API chatbot built on n8n that qualifies property leads automatically. Debugged and fixed a pagination issue in a live production workflow.",o:"Running in production for a real estate client.",s:["n8n","WhatsApp Business API","Webhooks","REST APIs"]},
+  {t:"AE Systems: Business Management SaaS",m:"Team project · WIL",d:"Business management platform with a Gemini-powered AI chatbot that I integrated, plus the UML, sequence, deployment and cloud architecture documentation. Layered N-Tier design using Repository, DTO and Observer patterns.",s:["Node.js","Express","MongoDB Atlas","JWT","Gemini API"]},
+  {t:"HustleHub+: Secure Freelance Marketplace",m:"Team project · MERN",d:"Freelance marketplace with role-based access for clients, freelancers and admins. I built the base setup, registration and login endpoints, and the SSL certificate configuration.",s:["MongoDB","Express","React","Node.js","SSL/TLS"]},
+  {t:"NEXORA Landing Page &amp; Contact Backend",m:"VOLTIX Internship · Tasks 1 &amp; 2",d:"Responsive SaaS-style landing page in React and Vite, with an Express contact API that validates and stores inquiries in SQLite.",s:["React","Vite","Express","SQLite"]},
+  {t:"Events Management Booking Platform",m:"Academic project · Cloud Development",d:"A booking platform for managing and reserving events, built for my Cloud Development portfolio of evidence.",s:["Cloud development","Booking system"],l:[["Watch demo","https://youtu.be/jkuqwqzhn3U"]]},
+  {t:"Cybersecurity Awareness Chatbot",m:"Academic project · PROG6221",d:"A chatbot that teaches users about common cyber security threats and how to protect themselves.",s:["C#","Chatbot","Security awareness"],l:[["Watch demo","https://youtu.be/CIVnRHEpgSs"]]},
+  {t:"Mobile App Back End",m:"Group assignment",d:"Designed and built the REST API and back-end architecture for a group mobile application.",s:["REST APIs","Back-end architecture"]},
+  {t:"Client websites &amp; automation",m:"Freelance",d:"Web and automation work for small businesses including Repent Clothing and Scotty-Uzi.",s:["Web development","Automation"]}
+];
+const skills = [
+  {t:"Automation &amp; AI",i:["n8n","Webhooks","REST APIs","Gemini API","Chatbots"]},
+  {t:"Back end",i:["Node.js","Express","MongoDB","SQLite","JWT auth","C# / .NET"]},
+  {t:"Front end",i:["JavaScript","React","Vite","HTML","CSS"]},
+  {t:"Tools &amp; practice",i:["Git &amp; GitHub","VS Code","GitHub Pages","UML &amp; architecture","Python (foundational)"]},
+  {t:"Currently learning",i:["LangChain &amp; RAG pipelines","Multi-agent systems (LangGraph)","Docker &amp; CI/CD","Azure AI Studio","Microsoft AI solution architecture"]}
+];
+const timeline = [
+  {t:"Freelance AI Automation &amp; Web Developer",m:"2024 – Present · Remote",d:"Building automations, chatbots and websites for small-business clients."},
+  {t:"VOLTIX Internship Programme",m:"2026 · Online",d:"Twelve-task development internship covering front-end and back-end builds."},
+  {t:"BCompSci: Computer and Data Science",m:"Emeris University, Sandton campus · Graduating 2026",d:"Final-year student; coursework and work-integrated learning in software engineering and cloud architecture."}
+];
+const certs = [
+  {t:"VOLTIX Internship Completion Certificate",m:"In progress · 2026"},
+  {t:"Legacy Responsive Web Design V8 Developer Certification",m:"freeCodeCamp · January 2025 · ~300 hours",l:"https://www.freecodecamp.org/certification/hollo23/responsive-web-design"},
+  {t:"Legacy JavaScript Algorithms and Data Structures V8 Developer Certification",m:"freeCodeCamp · February 2025 · ~300 hours",l:"https://freecodecamp.org/certification/hollo23/javascript-algorithms-and-data-structures-v8"},
+  {t:"Microsoft: Architect AI Solutions for Business Productivity",m:"In progress · Working toward AI Solution Architect / AI Engineer roles"}
+];
+const testimonials = []; // add {q:"quote", n:"Name", r:"Role, Company"} to show the Client Feedback section
+const videos = [
+  {t:"Events Management Booking Platform: Demo",id:"jkuqwqzhn3U"},
+  {t:"Cybersecurity Awareness Chatbot: Demo",id:"CIVnRHEpgSs"}
+];
+/* ===== RENDER ===== */
+const $=id=>document.getElementById(id);
+$("projectGrid").innerHTML=projects.map(p=>`<article class="card"><h3>${p.t}</h3><div class="meta">${p.m}</div><p>${p.d}</p>${p.o?`<p style="color:var(--text)"><strong>Outcome:</strong> ${p.o}</p>`:""}${(p.l||[]).map(l=>`<a class="meta" href="${l[1]}" target="_blank" rel="noopener">${l[0]} ↗</a> `).join("")}<div class="tags">${p.s.map(x=>`<span class="chip">${x}</span>`).join("")}</div></article>`).join("");
+$("skillGrid").innerHTML=skills.map(s=>`<div class="card"><h3>${s.t}</h3><div class="tags">${s.i.map(x=>`<span class="chip">${x}</span>`).join("")}</div></div>`).join("");
+$("timeline").innerHTML=timeline.map(x=>`<div class="item"><h3>${x.t}</h3><div class="meta">${x.m}</div><p>${x.d}</p></div>`).join("");
+$("certGrid").innerHTML=certs.map(c=>`<div class="card"><h3>${c.t}</h3><div class="meta">${c.m}</div>${c.l?`<p style="margin:10px 0 0"><a href="${c.l}" target="_blank" rel="noopener">Verify certificate ↗</a></p>`:""}</div>`).join("");
+$("videoGrid").innerHTML=videos.map(v=>`<article class="card"><iframe class="vid" src="https://www.youtube-nocookie.com/embed/${v.id}" title="${v.t}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe><h3 style="margin-top:14px">${v.t}</h3><a class="meta" href="https://youtu.be/${v.id}" target="_blank" rel="noopener">Watch on YouTube ↗</a></article>`).join("");
+$("yr").textContent=new Date().getFullYear();
+$("gh").href=CONFIG.github;$("li").href=CONFIG.linkedin;$("em").href="mailto:"+CONFIG.email;
+[$("gh"),$("li")].forEach(a=>{a.target="_blank";a.rel="noopener"});
+const alt=[["Email me","mailto:"+CONFIG.email],["Message on LinkedIn",CONFIG.linkedin]];
+if(CONFIG.booking)alt.unshift(["Book a free 15-min intro call",CONFIG.booking]);
+$("alt").innerHTML=alt.map(a=>`<a class="btn ghost" href="${a[1]}" target="_blank" rel="noopener">${a[0]}</a>`).join(" ");
+if(testimonials.length){$("testimonials").hidden=false;$("testiGrid").innerHTML=testimonials.map(t=>`<blockquote class="card" style="margin:0"><p style="color:var(--text);margin-top:0">“${t.q}”</p><div class="meta">${t.n}, ${t.r}</div></blockquote>`).join("")}
+/* theme toggle */
+$("theme").onclick=()=>{const r=document.documentElement;const cur=r.dataset.theme||"dark";r.dataset.theme=cur==="dark"?"light":"dark"};
+/* contact form */
+$("form").addEventListener("submit",async e=>{
+  e.preventDefault();const f=new FormData(e.target),st=$("status");
+  if(CONFIG.formspree){
+    try{const r=await fetch(CONFIG.formspree,{method:"POST",body:f,headers:{Accept:"application/json"}});
+      if(r.ok){st.textContent="Thanks! Your message was sent.";e.target.reset();return}}catch(_){}
+    st.textContent="Something went wrong. Please email me directly.";return;
+  }
+  const body=encodeURIComponent(`${f.get("message")}\n\n— ${f.get("name")} (${f.get("email")})`);
+  location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent("Portfolio enquiry from "+f.get("name"))}&body=${body}`;
+  st.textContent="Opening your email app…";
+});
+</script>
+</body>
+</html>
